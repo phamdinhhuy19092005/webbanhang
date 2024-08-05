@@ -29,9 +29,22 @@ class RouteProvider {
 
         $reqURI = $_SERVER['REQUEST_URI'];
 
-        $resource = $routes[$reqURI];
+        $parsedReqURI = $this->parseReqURI($reqURI);
+
+        $resource = $routes[$parsedReqURI];
 
         return [$resource[0], $resource[1]];
+    }
+
+    public function parseReqURI($reqURI)
+    {
+        $isExisted = strpos($reqURI, Route::$rootPath) !== false;
+
+        if ($isExisted) {
+            return $reqURI;
+        }
+
+        return Route::$rootPath . $reqURI;
     }
 }
 
