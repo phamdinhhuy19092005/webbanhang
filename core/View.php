@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 namespace Core;
 
@@ -18,7 +18,14 @@ class View
 
     public function render()
     {
-        require_once $this->parsePath($this->path);
+        // Read the content of the template file
+        $content = file_get_contents($this->parsePath($this->path));
+
+        // Process the content to replace {{ }} with PHP echo statements
+        $content = $this->processTemplate($content);
+
+        // Evaluate the processed content
+        eval('?>' . $content);
     }
 
     public function parsePath($path)
@@ -26,11 +33,17 @@ class View
         $parsedPath = str_replace('.', DIRECTORY_SEPARATOR, $path);
 
         $fullPath = RESOURCE_PATH . DIRECTORY_SEPARATOR . 'views' . DIRECTORY_SEPARATOR . $parsedPath . '.html';
-        
+
         if (file_exists($fullPath)) {
             return $fullPath;
         }
 
-        exception('View Not Found with path: ' . $parsedPath);
+        throw new \Exception('View Not Found with path: ' . $parsedPath);
+    }
+
+    private function processTemplate($content)
+    {
+        // Replace {{ expression }} with <?php echo expression;
+        return preg_replace('/\{\{\s*(.+?)\s*\}\}/', '<?php echo $1; ?>', $content);
     }
 }
