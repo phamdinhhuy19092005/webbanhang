@@ -5,7 +5,8 @@ namespace Core\Providers;
 use Core\Route;
 use Error;
 
-class RouteProvider {
+class RouteProvider
+{
     public function __construct()
     {
         [$controller, $method] = $this->analyseRoute();
@@ -28,10 +29,30 @@ class RouteProvider {
         $routes = Route::$routes;
 
         $reqURI = $_SERVER['REQUEST_URI'];
+        echo "Request URI: " . $reqURI . "<br>";
 
-        $resource = $routes[$reqURI];
+        $parsedReqURI = $this->parseReqURI($reqURI);
+        echo "Parsed URI: " . $parsedReqURI . "<br>";
+
+        if (!isset($routes[$parsedReqURI])) {
+            throw new Error("No route matched for URI: " . $parsedReqURI);
+        }
+
+        $resource = $routes[$parsedReqURI];
 
         return [$resource[0], $resource[1]];
+    }
+
+
+    public function parseReqURI($reqURI)
+    {
+        $isExisted = strpos($reqURI, Route::$rootPath) !== false;
+
+        if ($isExisted) {
+            return $reqURI;
+        }
+
+        return Route::$rootPath . $reqURI;
     }
 }
 

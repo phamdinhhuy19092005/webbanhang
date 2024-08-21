@@ -1,4 +1,6 @@
-<?php 
+<?php
+
+use Core\View;
 
 function route($controller, $method) {
     echo $controller . $method;
@@ -22,4 +24,23 @@ function provider($name)
     }
 
     throw new Error('Provider Name not found:' . $file);
+}
+
+function view($path)
+{
+    return View::make($path)->render();
+}
+
+function filter_files($files)
+{
+    $files = array_filter($files, function($file) {
+        return !in_array($file, array('.', '..'));
+    });
+
+    return $files;
+}
+
+function exception($msg = 'Internal Server Error.', $errorCode = 500)
+{
+    throw new Error($msg, $errorCode);
 }
