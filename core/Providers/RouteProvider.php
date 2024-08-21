@@ -11,6 +11,15 @@ class RouteProvider
     {
         [$controller, $method] = $this->analyseRoute();
 
+        // dd(
+        //     class_exists($controller) ? 'yes' : 'no'
+        // );
+
+        /**
+         * 1 class này có tồn tại -> true
+         * 2 tên đúng chưa -> true
+         */
+
         if (! class_exists($controller)) {
             throw new Error('Controller not found: ' . $controller);
         }
@@ -29,10 +38,10 @@ class RouteProvider
         $routes = Route::$routes;
 
         $reqURI = $_SERVER['REQUEST_URI'];
-        echo "Request URI: " . $reqURI . "<br>";
+        // echo "Request URI: " . $reqURI . "<br>";
 
         $parsedReqURI = $this->parseReqURI($reqURI);
-        echo "Parsed URI: " . $parsedReqURI . "<br>";
+        // echo "Parsed URI: " . $parsedReqURI . "<br>";
 
         if (!isset($routes[$parsedReqURI])) {
             throw new Error("No route matched for URI: " . $parsedReqURI);
