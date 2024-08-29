@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    @child('styles')
+
+    <title> @child('title') </title>
+</head>
+
+<body>
+    <div id="wrapper">
+        @include('frontend.layouts.header')
+
+        @child('content')
+
+        @include('frontend.layouts.footer')
+    </div>
+
+    @child('js')
+
+</body>
+</html>

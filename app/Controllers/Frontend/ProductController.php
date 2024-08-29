@@ -2,10 +2,10 @@
 
 namespace App\Controllers\Frontend;
 
-class ProductController 
+class ProductController extends BaseController
 {
     public function index()
     {
-        echo 'index products';
+        return $this->view('home.index');
     }
 }

@@ -1,0 +1,270 @@
+.breadcrum-catalog {
+    display: flex;
+}
+
+.wrapF {
+    margin: 5px 0px;
+}
+
+.breadcrum-cat-item {
+    align-items: center;
+}
+
+.wdt {
+    width: 100px;
+}
+
+.breadcrum-cat-item a img {
+    filter: grayscale(100%);
+    opacity: .75;
+    width: 18px;
+    height: 18px;
+}
+
+.header-box-title {
+    padding: 0px;
+    margin-left: 130px;
+    font-size: 14px;
+    max-height: 25px;
+}
+
+.title-khuyen-mai a {
+    font-size: 14px;
+}
+
+/*  */
+.center-body {
+    display: flex;
+}
+
+.center-body-left {
+    /* display: none; */
+    position: sticky;
+    top: 20px;
+    z-index: 9999;
+    max-height: 600px;
+    background-color: #ffff;
+    max-width: 245px;
+}
+
+.body-left-box-title {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    font-weight: bold;
+    text-align: center;
+    padding: 7px 0;
+}
+
+.catalog-sub-item {
+    position: relative;
+    line-height: 25px;
+}
+
+.catalog-sub-item a {
+    color: #333;
+    margin: 0px 10px;
+    font-size: 14px;
+    padding: 6px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.catalog-sub-item a:hover {
+    color: #DA251C;
+}
+
+.catalog-sub-item a i {
+    margin-left: 20px;
+}
+
+.catag-title-sub-item {
+    width: 180px;
+}
+
+.icon-sub-item {
+    display: flex;
+    align-items: center;
+}
+
+.icon-sub-item img {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.list-catalog-sub-children {
+    z-index: 999;
+    display: none;
+    background-color: #ffff;
+    border: 1px solid #ddd;
+    position: absolute;
+    top: 0px;
+    left: 244px;
+}
+
+.catalog-sub-item:hover>.list-catalog-sub-children {
+    display: block;
+}
+
+.center-body-right {
+    width: 78%;
+    display: block;
+    margin-left: 20px;
+    position: relative;
+}
+
+.swiper-ctn-left {
+    margin-right: 0px;
+}
+
+.swiper-ctn-left img {
+    height: 100%;
+}
+
+/*  */
+.cat-xeo-top {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 5px;
+    padding-bottom: 15px;
+}
+
+.cat-xeo-desc {
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.cat-xeo-top span {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.catalog-main-item {
+    width: 13%;
+    margin: 0px 5px;
+    margin-bottom: 10px;
+}
+
+.name-cat-main h2 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+}
+
+.wrap-catalog-main {
+    background-color: #EEEEEE;
+    margin-top: 0px;
+}
+
+.catalog-main-item:hover {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.catalog-main-item a:hover>.name-cat-main>h2 {
+    color: #DA251C;
+}
+
+.cat-product-highlight {
+    background-color: #ffff;
+}
+
+.title-left {
+    padding-bottom: 5px;
+}
+
+.content-desc-catalog {
+    margin-top: 30px;
+}
+
+.description-catalog {
+    margin: 0px 10px;
+    padding-top: 30px;
+}
+
+.description-catalog p img {
+    width: 95%;
+}
+
+._cc_ilcss1_ {
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.description-catalog p {
+    margin: 8px 0px;
+    font-size: 15px;
+    color: #333;
+    /* text-align: justify; */
+}
+
+.description-catalog p img {
+    margin: 5px 23px;
+}
+
+.description-catalog p>strong {
+    margin: 0px 2px;
+}
+
+.description-catalog p>strong>a {
+    color: #0071C4;
+}
+
+.list-catalog-main {
+    justify-content: center;
+}
+
+@media all and (max-width: 768px) {
+
+    .center-body-left,
+    .header-box-title {
+        display: none;
+    }
+
+    .center-body-right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .catalog-main-item {
+        width: 16.6%;
+        margin: 0;
+    }
+
+    .list-catalog-main {
+        justify-content: flex-start;
+    }
+}
+
+@media all and (max-width: 600px) {
+
+    .center-body-left,
+    .header-box-title {
+        display: none;
+    }
+
+    .center-body-right {
+        width: 100%;
+        margin: 0;
+    }
+
+    .catalog-main-item {
+        margin: 10px 5px;
+        width: 33.3%;
+        margin: 0;
+    }
+
+    .list-catalog-main {
+        justify-content: flex-start;
+    }
+}
+
+@media all and (max-width: 415px) {
+    .wBanner {
+        height: 160px;
+    }
+}

@@ -11,4 +11,3 @@ class Route {
         self::$routes[self::$rootPath . $route] = $args;
     }
 }
-

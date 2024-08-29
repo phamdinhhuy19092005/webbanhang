@@ -1,0 +1,129 @@
+@extends('frontend.layouts.master')
+
+@section('title')
+Login
+@endsection
+
+@section('styles')
+<link rel="stylesheet" href="{{ asset('resources/libraries/font-awesome/font-awesome-6.5.1.css') }}">
+<link rel="stylesheet" href="{{ asset('resources/css/frontend/pages/login/index.css') }}">
+<link rel="stylesheet" href="{{ asset('resources/css/frontend/pages/home/index.css') }}">
+<link rel="stylesheet" href="{{ asset('resources/css/frontend/pages/products/index.css') }}">
+@endsection
+
+@section('content')
+<section id="center-m">
+    <div class="wrapX">
+        <div class="wrap-redux">
+            <div class="member-row">
+                <div class="member-col member-left">
+                    <a href="#">
+                        <img src="https://st.meta.vn/img/thumb.ashx/Data/2022/Thang04/Banner-may-hut-bui-560x460.png"
+                            alt="">
+                    </a>
+                </div>
+                <div class="member-col  member-right">
+                    <form class="formLogin" action="" autocomplete="off">
+                        <div class="form-subtitle">
+                            Đăng nhập
+                        </div>
+                        <div class="form-outline">
+                            <input type="tel" name="sdt" autocomplete="off" required>
+                            <label class="form-user form-label" for="">Nhập số điện thoại</label>
+                        </div>
+                        <div class="form-outline">
+                            <input type="password" id="pass" name="password" autocomplete="off" required>
+                            <label class="form-pass form-label" for="">Mật khẩu</label>
+                            <div class="showPass" onclick="validatePass()">
+                                <i class="fa-regular fa-eye-slash"></i>
+                            </div>
+                        </div>
+                        <div class="form-outline forgot"><a href="#">Quên mật khẩu?</a></div>
+                        <div class="login-btn disable">
+                            <button>Đăng nhập</button>
+                        </div>
+                        <div class="form-nav-btn login">
+                            <span>Bạn chưa có tài khoản? <a class="reg-btn" href="register.html">Đăng ký</a>
+                            </span>
+                        </div>
+                        <div class="form-devider">
+                            <span>HOẶC</span>
+                        </div>
+                        <div class="login-type-btn email">
+                            <button>
+                                <div class="btn-type">
+                                    <img class="icon" src="https://meta.vn/images/account_site/email.svg"
+                                        alt="">
+                                    <span>Đăng nhập bằng Email</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="login-type-btn email">
+                            <button>
+                                <div class="btn-type">
+                                    <img class="icon" src="https://meta.vn/images/account_site/zalo.svg" alt="">
+                                    <span>Tiếp tục với Zalo</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="login-type-btn email">
+                            <button>
+                                <div class="btn-type">
+                                    <img class="icon" src="https://meta.vn/images/account_site/google.svg"
+                                        alt="">
+                                    <span>Tiếp tục với Google</span>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="login-type-btn email">
+                            <button>
+                                <div class="btn-type">
+                                    <img class="icon" src="https://meta.vn/images/account_site/facebook.svg"
+                                        alt="">
+                                    <span>Tiếp tục với Facebook</span>
+                                </div>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="slogan-body">
+    <div class="row-slogan">
+        <div class="sologan-item">
+            <a href="#">
+                <div class="icon-slogan">
+                    <img src="https://meta.vn/images/icons/dich-vu-uy-tin-icon.svg" alt="">
+                </div>
+                <div class="service-name">Dịch vụ uy tín</div>
+            </a>
+        </div>
+        <div class="sologan-item">
+            <a href="#">
+                <div class="icon-slogan">
+                    <img src="https://meta.vn/images/icons/doi-tra-hang-icon.svg" alt="">
+                </div>
+                <div class="service-name">Đổi trả trong 7 ngày</div>
+            </a>
+        </div>
+        <div class="sologan-item">
+            <a href="#">
+                <div class="icon-slogan">
+                    <img src="https://meta.vn/images/icons/giao-hang-toan-quoc-icon.svg" alt="">
+                </div>
+                <div class="service-name">Giao hàng toàn quốc</div>
+            </a>
+        </div>
+    </div>
+</div>
+@endsection
+
+@section('js')
+<script src="{{ asset('resources/libraries/jquery/jquery-3.7.1.js') }}"></script>
+<script src="{{ asset('resources/libraries/owlcarousel/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('resources/js/frontend/common/app.js') }}"></script>
+<script src="{{ asset('resources/js/frontend/pages/product-categories/banner2.js') }}"></script>
+<script src="{{ asset('resources/js/frontend/common/owl4.js') }}"></script>
+@endsection

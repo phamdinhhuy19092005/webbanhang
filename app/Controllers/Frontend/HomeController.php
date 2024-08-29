@@ -1,11 +1,11 @@
-<?php
+<?php 
 
 namespace App\Controllers\Frontend;
 
-class HomeController 
+class HomeController extends BaseController
 {
     public function index() {
-        echo 'Home index';
+        return $this->view('home.index');
     }
 
     public function create() {

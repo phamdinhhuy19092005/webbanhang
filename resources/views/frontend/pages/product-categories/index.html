@@ -1,0 +1,1329 @@
+@extends('frontend.layouts.master')
+
+@section('title')
+Danh mục sản phẩm
+@endsection
+
+@section('styles')
+<link rel="stylesheet" href="{{ asset('resources/libraries/font-awesome/font-awesome-6.5.1.css') }}">
+<link rel="stylesheet" href="{{ asset('resources/css/frontend/pages/home/index.css') }}">
+<link rel="stylesheet" href="{{ asset('resources/css/frontend/pages/products/index.css') }}">
+<link rel="stylesheet" href="{{ asset('resources/css/frontend/pages/product-categories/index.css') }}">
+<link rel="stylesheet" href="{{ asset('resources/libraries/owlcarousel/assets/owl.carousel.min.css') }}">
+<link rel="stylesheet" href="{{ asset('resources/libraries/owlcarousel/assets/owl.theme.default.min.css') }}">
+@endsection
+
+@section('content')
+<div id="menu-container">
+    <div class="wrapF">
+        <div class="breadcrum-catalog">
+            <ul class="breadcrum-cat-box">
+                <li class="breadcrum-cat-item">
+                    <a href="index.html">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </a>
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
+
+                <li class="breadcrum-cat-item">
+                    <a href="#">Điện máy</a>
+                </li>
+
+            </ul>
+            <div class="header-box-title">
+                <span class="title-khuyen-mai">
+                    <a href="#" title="Bấm vào đây để xem danh sách khuyến mãu">KHUYẾN MÃI</a>
+                </span>
+                <div class="slides">
+                    <img src="https://png.pngtree.com/png-vector/20230730/ourmid/pngtree-red-gift-box-3d-vector-illustration-png-image_9116970.png"
+                        alt="">
+                </div>
+
+                <div class="text_title">
+                    <div class="sec__text">Mua bếp từ Nagakawa NK2C26MB tặng bộ nồi Nagakawa NAG1352 và chảo đáy
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center-body">
+        <div class="center-body-left">
+            <div class="body-left-box">
+                <div class="body-left-box-title">Điện máy</div>
+            </div>
+            <div class="body-left-box-inner">
+                <ul class="list-catalog-sub">
+                    <li class="catalog-sub-item">
+                        <a href="#">
+                            <span class="icon-sub-item">
+                                <img src="https://meta.vn/icons/cats/1018.png" alt="">
+                            </span>
+                            <span class="catag-title-sub-item">Điều hòa</span>
+
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <!-- childr -->
+                        <ul class="list-catalog-sub-children">
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="catalog-sub-item">
+                        <a href="#">
+                            <span class="icon-sub-item">
+                                <img src="	https://meta.vn/icons/cats/3256.png" alt="">
+                            </span>
+                            <span class="catag-title-sub-item">TiVi</span>
+
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <!-- childr -->
+                        <ul class="list-catalog-sub-children">
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="catalog-sub-item">
+                        <a href="#">
+                            <span class="icon-sub-item">
+                                <img src="https://meta.vn/icons/cats/1015.png" alt="">
+                            </span>
+                            <span class="catag-title-sub-item">Tủ lạnh</span>
+
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <!-- childr -->
+                        <ul class="list-catalog-sub-children">
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="catalog-sub-item">
+                        <a href="#">
+                            <span class="icon-sub-item">
+                                <img src="https://meta.vn/icons/cats/1017.png" alt="">
+                            </span>
+                            <span class="catag-title-sub-item">Máy giặt</span>
+
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <!-- childr -->
+                        <ul class="list-catalog-sub-children">
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="catalog-sub-item">
+                        <a href="#">
+                            <span class="icon-sub-item">
+                                <img src="https://meta.vn/icons/cats/664.png" alt="">
+                            </span>
+                            <span class="catag-title-sub-item">Máy lọc không khí</span>
+
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <!-- childr -->
+                        <ul class="list-catalog-sub-children">
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="catalog-sub-item">
+                        <a href="#">
+                            <span class="icon-sub-item">
+                                <img src="https://meta.vn/icons/cats/1016.png" alt="">
+                            </span>
+                            <span class="catag-title-sub-item">Tủ đông</span>
+
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <!-- childr -->
+                        <ul class="list-catalog-sub-children">
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="catalog-sub-item">
+                        <a href="#">
+                            <span class="icon-sub-item">
+                                <img src="https://meta.vn/icons/cats/1021.png" alt="">
+                            </span>
+                            <span class="catag-title-sub-item">Tủ mát</span>
+
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <!-- childr -->
+                        <ul class="list-catalog-sub-children">
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="catalog-sub-item">
+                        <a href="#">
+                            <span class="icon-sub-item">
+                                <img src="https://meta.vn/icons/cats/3156.png" alt="">
+                            </span>
+                            <span class="catag-title-sub-item">Máy làm đá viên</span>
+
+
+                        </a>
+                        <!-- childr -->
+                    </li>
+
+
+                    <li class="catalog-sub-item">
+                        <a href="#">
+                            <span class="icon-sub-item">
+                                <img src="https://meta.vn/icons/cats/756.png" alt="">
+                            </span>
+                            <span class="catag-title-sub-item">Máy rửa chén bát</span>
+
+                        </a>
+                        <!-- childr -->
+                    </li>
+
+                    <li class="catalog-sub-item">
+                        <a href="#">
+                            <span class="icon-sub-item">
+                                <img src="https://meta.vn/icons/cats/757.png" alt="">
+                            </span>
+                            <span class="catag-title-sub-item">Bình nóng lạnh</span>
+
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                        <!-- childr -->
+                        <ul class="list-catalog-sub-children">
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="catalog-sub-item">
+                                <a href="#">
+                                    <span class="catag-title-sub-item">
+                                        Điều hòa 1 chiều
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="catalog-sub-item">
+                        <a href="#">
+                            <span class="icon-sub-item">
+                                <img src="https://meta.vn/icons/cats/3544.png" alt="">
+                            </span>
+                            <span class="catag-title-sub-item">Tủ chăm sóc quần áo thông minh</span>
+
+
+                        </a>
+                        <!-- childr -->
+                    </li>
+
+                    <li class="catalog-sub-item">
+                        <a href="#">
+                            <span class="icon-sub-item">
+                                <img src="https://meta.vn/icons/cats/2850.png" alt="">
+                            </span>
+                            <span class="catag-title-sub-item">Tủ rượu</span>
+
+                        </a>
+                        <!-- childr -->
+                    </li>
+
+                    <li class="catalog-sub-item">
+                        <a href="#">
+                            <span class="icon-sub-item">
+                                <img src="https://meta.vn/icons/cats/1258.png" alt="">
+                            </span>
+                            <span class="catag-title-sub-item">Tủ xấy quần áo</span>
+
+
+                        </a>
+                        <!-- childr -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="center-body-right">
+            <div class="wBanner">
+                <div class="swiper">
+                    <div class="swiper-ctn-left">
+                        <img id="banner"
+                            src="https://st.meta.vn/img/thumb.ashx/0x0x95/Data/image/2023/09/12/Banner-tivi-thong-minh-970x270.png"
+                            alt="">
+                            <div class="dieuhuong">
+                                <div class="left">
+                                    <button onclick="left()" fdprocessedid="775vw"> <i
+                                            class="fa-solid fa-chevron-left"></i></button>
+                                </div>
+                                <div class="right">
+                                    <button onclick="right()" fdprocessedid="haup8h">
+                                        <i class="fa-solid fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                    </div>
+                    <!--  -->
+                </div>
+            </div>
+            <!--  -->
+            <div class="cat-xeo-top">
+                <h1 class="cat-xeo-desc">Điện máy</h1>
+                <span>(6046 sản phẩm)</span>
+            </div>
+            <div class="wrap-catalog-main">
+                <ul class="list-catalog-main">
+
+                    <li class="catalog-main-item">
+                        <a href="#">
+                            <div class="icon-cat-main-thumb">
+                                <span>
+                                    <img src="https://meta.vn/icons/cateico/c448-150x150.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="name-cat-main">
+                                <h2>Quạt, Máy làm mát</h2>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="catalog-main-item">
+                        <a href="#">
+                            <div class="icon-cat-main-thumb">
+                                <span>
+                                    <img src="https://meta.vn/icons/cateico/c581-150x150.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="name-cat-main">
+                                <h2>Máy pha cà phê</h2>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="catalog-main-item">
+                        <a href="#">
+                            <div class="icon-cat-main-thumb">
+                                <span>
+                                    <img src="https://meta.vn/icons/cateico/c1099-150x150.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="name-cat-main">
+                                <h2>Các loại nồi</h2>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="catalog-main-item">
+                        <a href="#">
+                            <div class="icon-cat-main-thumb">
+                                <span>
+                                    <img src="https://meta.vn/icons/cateico/c443-150x150.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="name-cat-main">
+                                <h2>Máy xây đa năng</h2>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="catalog-main-item">
+                        <a href="#">
+                            <div class="icon-cat-main-thumb">
+                                <span>
+                                    <img src="https://meta.vn/icons/cateico/c565-150x150.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="name-cat-main">
+                                <h2>Cây nước nóng lạnh</h2>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="catalog-main-item">
+                        <a href="#">
+                            <div class="icon-cat-main-thumb">
+                                <span>
+                                    <img src="https://meta.vn/icons/cateico/c1089-150x150.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="name-cat-main">
+                                <h2>Các loại bếp</h2>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="catalog-main-item">
+                        <a href="#">
+                            <div class="icon-cat-main-thumb">
+                                <span>
+                                    <img src="https://meta.vn/icons/cateico/c386-150x150.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="name-cat-main">
+                                <h2>Máy hút bụi</h2>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="catalog-main-item">
+                        <a href="#">
+                            <div class="icon-cat-main-thumb">
+                                <span>
+                                    <img src="https://meta.vn/icons/cateico/c448-150x150.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="name-cat-main">
+                                <h2>Quạt, Máy làm mát</h2>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="catalog-main-item">
+                        <a href="#">
+                            <div class="icon-cat-main-thumb">
+                                <span>
+                                    <img src="https://meta.vn/icons/cateico/c581-150x150.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="name-cat-main">
+                                <h2>Máy pha cà phê</h2>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="catalog-main-item">
+                        <a href="#">
+                            <div class="icon-cat-main-thumb">
+                                <span>
+                                    <img src="https://meta.vn/icons/cateico/c1099-150x150.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="name-cat-main">
+                                <h2>Các loại nồi</h2>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="catalog-main-item">
+                        <a href="#">
+                            <div class="icon-cat-main-thumb">
+                                <span>
+                                    <img src="https://meta.vn/icons/cateico/c443-150x150.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="name-cat-main">
+                                <h2>Máy xây đa năng</h2>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="catalog-main-item">
+                        <a href="#">
+                            <div class="icon-cat-main-thumb">
+                                <span>
+                                    <img src="https://meta.vn/icons/cateico/c565-150x150.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="name-cat-main">
+                                <h2>Cây nước nóng lạnh</h2>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="catalog-main-item">
+                        <a href="#">
+                            <div class="icon-cat-main-thumb">
+                                <span>
+                                    <img src="https://meta.vn/icons/cateico/c1089-150x150.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="name-cat-main">
+                                <h2>Các loại bếp</h2>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="catalog-main-item">
+                        <a href="#">
+                            <div class="icon-cat-main-thumb">
+                                <span>
+                                    <img src="https://meta.vn/icons/cateico/c386-150x150.jpg" alt="">
+                                </span>
+                            </div>
+                            <div class="name-cat-main">
+                                <h2>Máy hút bụi</h2>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+
+             
+                <div class="view-more-page"><a href="#">Xem thêm 24 chuyên mục</a></div>
+            </div>
+
+            <div class="box-catalog">
+                <div class="box-cat-title">
+                    <img src="https://png.pngtree.com/png-clipart/20230408/original/pngtree-light-thunder-with-yellow-color-and-black-outline-png-image_9036888.png"
+                        alt="">
+                    <h2 class="title-box"><a href="#">FLASH SALE</a></h2>
+                </div>
+                <div class="list-product-highlight">
+                    <ul class="list-products owl-carousel owl-theme">
+
+                        <li class="product-highlight-item item ">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/02/19/tu-lanh-4-canh-electrolux-eqe6909a-bvn-622-lit-a.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                <span> -40%</span>
+                            </div>
+
+                            <div class="prod-hl-name">
+                                <a href="#">
+                                    <h3>Tủ lạnh 4 cánh Electrolux EQE6909A-BVN (622 lít)</h3>
+                                </a>
+                            </div>
+                            <div class="prod-hl-brand">
+                                <a href="#">Electrolux</a>
+                            </div>
+                            <div class="countdown-product">
+                                <div class="cdown-pro-left">
+                                    <div class="fs-price">
+                                        <span class="fs-price-main">27.900.000đ</span><br>
+                                        <span class="old-price-fs"><del>32.990.000đ</del></span>
+                                    </div>
+                                </div>
+                                <div class="tragop-ox">
+                                    Trả góp
+                                </div>
+                                <div class="cdown-pro-right">
+                                    <div class="flashsale-box">
+                                        <div class="time-box-left"><span class="timeleft">Kết thúc sau</span>
+                                        </div>
+                                        <div class="time-flash running">
+                                            <span class="ngay days">58</span> ngày
+                                        </div>
+                                    </div>
+                                    <div class="time-box-left">
+                                        <span class="seconds">Còn <span class="among-buy">40</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="product-highlight-item item item">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/02/19/tu-lanh-4-canh-electrolux-eqe6909a-bvn-622-lit-a.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                <span> -40%</span>
+                            </div>
+
+                            <div class="prod-hl-name">
+                                <a href="#">
+                                    <h3>Tủ lạnh 4 cánh Electrolux EQE6909A-BVN (622 lít)</h3>
+                                </a>
+                            </div>
+                            <div class="prod-hl-brand">
+                                <a href="#">Electrolux</a>
+                            </div>
+                            <div class="countdown-product">
+                                <div class="cdown-pro-left">
+                                    <div class="fs-price">
+                                        <span class="fs-price-main">27.900.000đ</span><br>
+                                        <span class="old-price-fs"><del>32.990.000đ</del></span>
+                                    </div>
+                                </div>
+                                <div class="tragop-ox">
+                                    Trả góp
+                                </div>
+                                <div class="cdown-pro-right">
+                                    <div class="flashsale-box">
+                                        <div class="time-box-left"><span class="timeleft">Kết thúc sau</span>
+                                        </div>
+                                        <div class="time-flash running">
+                                            <span class="ngay days">58</span> ngày
+                                        </div>
+                                    </div>
+                                    <div class="time-box-left">
+                                        <span class="seconds">Còn <span class="among-buy">40</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="product-highlight-item item">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2021/02/23/tu-lanh-casper-nhieu-cua-645l-rm-680vbw-500.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                <span> -40%</span>
+                            </div>
+
+                            <div class="prod-hl-name">
+                                <a href="#">
+                                    <h3>Tủ lạnh Casper inverter 4 cánh 645L RM-680VBW</h3>
+                                </a>
+                            </div>
+                            <div class="prod-hl-brand">
+                                <a href="#">Casper</a>
+                            </div>
+                            <div class="countdown-product">
+                                <div class="cdown-pro-left">
+                                    <div class="fs-price">
+                                        <span class="fs-price-main">27.900.000đ</span><br>
+                                        <span class="old-price-fs"><del>32.990.000đ</del></span>
+                                    </div>
+                                </div>
+                                <div class="tragop-ox">
+                                    Trả góp
+                                </div>
+                                <div class="cdown-pro-right">
+                                    <div class="flashsale-box">
+                                        <div class="time-box-left"><span class="timeleft">Kết thúc sau</span>
+                                        </div>
+                                        <div class="time-flash running">
+                                            <span class="ngay days">58</span> ngày
+                                        </div>
+                                    </div>
+                                    <div class="time-box-left">
+                                        <span class="seconds">Còn <span class="among-buy">40</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="product-highlight-item item">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2022/01/08/may-say-bom-nhiet-samsung-inverter-9-kg-dv90t7240bb-sv.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                <span> -40%</span>
+                            </div>
+
+                            <div class="prod-hl-name">
+                                <a href="#">
+                                    <h3>Máy sấy bơm nhiệt Samsung Inverter 9 Kg DV90T7240BB/SV</h3>
+                                </a>
+                            </div>
+                            <div class="prod-hl-brand">
+                                <a href="#">Samsung</a>
+                            </div>
+                            <div class="countdown-product">
+                                <div class="cdown-pro-left">
+                                    <div class="fs-price">
+                                        <span class="fs-price-main">27.900.000đ</span><br>
+                                        <span class="old-price-fs"><del>32.990.000đ</del></span>
+                                    </div>
+                                </div>
+                                <div class="tragop-ox">
+                                    Trả góp
+                                </div>
+                                <div class="cdown-pro-right">
+                                    <div class="flashsale-box">
+                                        <div class="time-box-left"><span class="timeleft">Kết thúc sau</span>
+                                        </div>
+                                        <div class="time-flash running">
+                                            <span class="ngay days">58</span> ngày
+                                        </div>
+                                    </div>
+                                    <div class="time-box-left">
+                                        <span class="seconds">Còn <span class="among-buy">40</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="product-highlight-item item item">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2023/02/24/may-lam-mat-khong-khi-sunhouse-shd7756.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                <span> -40%</span>
+                            </div>
+
+                            <div class="prod-hl-name">
+                                <a href="#">
+                                    <h3>Máy làm mát không khí Sunhouse SHD7756 (45L)</h3>
+                                </a>
+                            </div>
+                            <div class="prod-hl-brand">
+                                <a href="#">Sunhouse</a>
+                            </div>
+                            <div class="countdown-product">
+                                <div class="cdown-pro-left">
+                                    <div class="fs-price">
+                                        <span class="fs-price-main">27.900.000đ</span><br>
+                                        <span class="old-price-fs"><del>32.990.000đ</del></span>
+                                    </div>
+                                </div>
+                                <div class="tragop-ox">
+                                    Trả góp
+                                </div>
+                                <div class="cdown-pro-right">
+                                    <div class="flashsale-box">
+                                        <div class="time-box-left"><span class="timeleft">Kết thúc sau</span>
+                                        </div>
+                                        <div class="time-flash running">
+                                            <span class="ngay days">58</span> ngày
+                                        </div>
+                                    </div>
+                                    <div class="time-box-left">
+                                        <span class="seconds">Còn <span class="among-buy">40</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="product-highlight-item item">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2020/12/08/bo-3-noi-inox-4-day-nagakawa-nag1306-300.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                <span> -40%</span>
+                            </div>
+
+                            <div class="prod-hl-name">
+                                <a href="#">
+                                    <h3>Bộ 3 nồi inox 4 đáy Nagakawa NAG1306 (16cm, 20cm, 24cm)</h3>
+                                </a>
+                            </div>
+                            <div class="prod-hl-brand">
+                                <a href="#">Electrolux</a>
+                            </div>
+                            <div class="countdown-product">
+                                <div class="cdown-pro-left">
+                                    <div class="fs-price">
+                                        <span class="fs-price-main">27.900.000đ</span><br>
+                                        <span class="old-price-fs"><del>32.990.000đ</del></span>
+                                    </div>
+                                </div>
+                                <div class="tragop-ox">
+                                    Trả góp
+                                </div>
+                                <div class="cdown-pro-right">
+                                    <div class="flashsale-box">
+                                        <div class="time-box-left"><span class="timeleft">Kết thúc sau</span>
+                                        </div>
+                                        <div class="time-flash running">
+                                            <span class="ngay days">58</span> ngày
+                                        </div>
+                                    </div>
+                                    <div class="time-box-left">
+                                        <span class="seconds">Còn <span class="among-buy">40</span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="box-catalog-brand">
+                <div class="box-cat-title-1013">
+                    <a href="#">
+                        <h2>THƯƠNG HIỆU NỔI BẬT</h2>
+                    </a>
+                </div>
+                <div class="body-brand-highlight">
+                    <ul class="list-brand-highlight">
+                        <li class="brand-highlight-item">
+                            <a href="#">
+                                <img src="https://st.meta.vn/img/thumb.ashx/Data/image/2021/03/18/logo-bosch-nho.png" alt="">
+                            </a><br>
+                            <a href="#">
+                                <img src="	https://st.meta.vn/img/thumb.ashx/Data/image/2021/03/26/logo-casper-to.png" alt="">
+                            </a>
+                        </li>
+                        <li class="brand-highlight-item">
+                            <a href="#">
+                                <img src="	https://st.meta.vn/img/thumb.ashx/Data/image/2021/02/24/logo-samsung-to.png" alt="">
+                            </a><br>
+                            <a href="#">
+                                <img src="https://st.meta.vn/img/thumb.ashx/Data/image/2021/03/18/logo-sunhouse-nho.png" alt="">
+                            </a>
+                        </li>
+                        <li class="brand-highlight-item">
+                            <a href="#">
+                                <img src="	https://st.meta.vn/img/thumb.ashx/Data/image/2014/10/06/toshiba_n.jpg" alt="">
+                            </a><br>
+                            <a href="#">
+                                <img src="	https://st.meta.vn/img/thumb.ashx/Data/image/2021/03/26/logo-lg-to.png" alt="">
+                            </a>
+                        </li>
+                        <li class="brand-highlight-item">
+                            <a href="#">
+                                <img src="https://st.meta.vn/img/thumb.ashx/Data/image/2015/09/08/Sharp-Logo-500.png" alt="">
+                            </a><br>
+                            <a href="#">
+                                <img src="https://st.meta.vn/img/thumb.ashx/Data/image/2015/09/08/Makita-logo-35.png" alt="">
+                            </a>
+                        </li>
+                        <li class="brand-highlight-item">
+                            <a href="#">
+                                <img src="https://st.meta.vn/img/thumb.ashx/Data/image/2022/08/20/logo-nagakawa-nho.png" alt="">
+                            </a><br>
+                            <a href="#">
+                                <img src="https://st.meta.vn/img/thumb.ashx/Data/image/2015/09/04/Panasonic-Logo-500.png" alt="">
+                            </a>
+                        </li>
+                        <li class="brand-highlight-item">
+                            <a href="#">
+                                <img src="https://st.meta.vn/img/thumb.ashx/Data/image/2015/09/04/Tiross-Logo-35.png" alt="">
+                            </a><br>
+                            <a href="#">
+                                <img src="https://st.meta.vn/img/thumb.ashx/Data/image/2022/02/23/logo-vinawind-nho.png" alt="">
+                            </a>
+                        </li>
+                        <li class="brand-highlight-item">
+                            <a href="#">
+                                <img src="https://st.meta.vn/img/thumb.ashx/Data/image/2016/04/06/aqua-35.png" alt="">
+                            </a><br>
+                            <a href="#">
+                                <img src="https://st.meta.vn/img/thumb.ashx/Data/image/2021/03/26/logo-funiki-to.png" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="cat-product-highlight">
+                <div class="title-bar-hl">
+                    <div class="title-bar-left">
+                        <span><img src="https://meta.vn/Data/image/2021/01/13/prod-hot-a.png" alt=""></span>
+                        <span class="title-left">Điện máy nổi bật</span>
+                    </div>
+
+                </div>
+                <div class="list-product-highlight">
+                    <ul class="product-highlight-wrap owl-carousel owl-theme">
+                        <li class="product-highlight-item item item">
+                            <a href="products.html">
+                                <div class="prod-hl-thumb">
+                                    <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg"
+                                        alt="">
+                                </div>
+
+                                <div class="prod-hl-discount">
+                                     -40%
+                                </div>
+
+                            </a>
+                            <div class="prod-hl-name"><a href="products.html">
+                                </a><a href="#">
+                                    <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                                </a>
+                            </div>
+                            <div class="prod-hl-brand">
+                                <a href="#">Casper</a>
+                            </div>
+                            <div class="box">
+                                <div class="product-price list-product-price">
+                                    <span class="product-price-meta">5.250.000 đ</span> <br>
+                                    <span class="product-price-old "><del>6.900.000</del> đ</span>
+                                </div>
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <span>(16)</span>
+                                </div>
+                            </div>
+
+                        </li>
+
+
+                        <li class="product-highlight-item item item">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                 -40%
+                            </div>
+
+                            <div class="prod-hl-name">
+                                <a href="#">
+                                    <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                                </a>
+                            </div>
+                            <div class="prod-hl-brand">
+                                <a href="#">Casper</a>
+                            </div>
+                            <div class="box">
+                                <div class="product-price list-product-price">
+                                    <span class="product-price-meta">5.250.000 đ</span> <br>
+                                    <span class="product-price-old "><del>6.900.000</del> đ</span>
+                                </div>
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <span>(16)</span>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="product-highlight-item item item">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                 -40%
+                            </div>
+
+                            <div class="prod-hl-name">
+                                <a href="#">
+                                    <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                                </a>
+                            </div>
+                            <div class="prod-hl-brand">
+                                <a href="#">Casper</a>
+                            </div>
+                            <div class="box">
+                                <div class="product-price list-product-price">
+                                    <span class="product-price-meta">5.250.000 đ</span> <br>
+                                    <span class="product-price-old "><del>6.900.000</del> đ</span>
+                                </div>
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <span>(16)</span>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="product-highlight-item item item">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                 -40%
+                            </div>
+
+                            <div class="prod-hl-name">
+                                <a href="#">
+                                    <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                                </a>
+                            </div>
+                            <div class="prod-hl-brand">
+                                <a href="#">Casper</a>
+                            </div>
+                            <div class="box">
+                                <div class="product-price list-product-price">
+                                    <span class="product-price-meta">5.250.000 đ</span> <br>
+                                    <span class="product-price-old "><del>6.900.000</del> đ</span>
+                                </div>
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <span>(16)</span>
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="product-highlight-item item item">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg"
+                                    alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                 -40%
+                            </div>
+
+                            <div class="prod-hl-name">
+                                <a href="#">
+                                    <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                                </a>
+                            </div>
+                            <div class="prod-hl-brand">
+                                <a href="#">Casper</a>
+                            </div>
+                            <div class="box">
+                                <div class="product-price list-product-price">
+                                    <span class="product-price-meta">5.250.000 đ</span> <br>
+                                    <span class="product-price-old "><del>6.900.000</del> đ</span>
+                                </div>
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <span>(16)</span>
+                                </div>
+                            </div>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content-desc-catalog">
+        <div class="description-catalog">
+            <h2 class="_cc_ilcss1_">Mua sản phẩm Điện máy, Điện lạnh tại META.vn uy tín, giá tốt</h2>
+            <p>Các thiết bị điện máy, điện lạnh ngày nay ngày càng đóng vai trò quan trọng
+                trong cuộc sống hiện đại, chủ yếu đều là các thiết bị phục vụ cho nhu cầu thiết yếu của cuộc
+                sống như:<strong><a href="#">tủ
+                        lạnh</a></strong>,<strong>điều hòa</strong>,<strong><a href="#">máy giặt</a></strong>,…
+                cho đến
+                các thiết bị khác như<strong>tủ đông</strong>,<strong>máy
+                    sấy</strong>,<strong>máy hút ẩm</strong>,<strong>thiết bị lọc không
+                    khí</strong>,... Tất cả các sản phẩm đều được trang bị những tính năng ưu việt, hỗ trợ tối
+                đa cho người sử dụng và luôn được các nhà sản xuất liên tục cải tiến, thay đổi từ kiểu dáng, mẫu
+                mã, tính năng đến mức giá cả hợp lý để đáp ứng mọi yêu cầu từ phía người tiêu dùng.
+            </p>
+            <p>Tuy nhiên, việc chọn mua những thiết bị điện máy, điện lạnh đạt chất lượng tốt từ các hãng – các
+                nhà sản xuất uy tín luôn là mối quan tâm hàng đầu của người tiêu dùng. Đến với website mua sắm
+                trực tuyến<strong>META.vn</strong>, quý khách hàng sẽ luôn an tâm về uy tín và chất lượng
+                của sản phẩm. META.vn phân phối chính hãng các sản phẩm của những thương hiệu điện máy, điện
+                lạnh nổi tiếng hiện nay như: <strong>Panasonic, Samsung, LG, Sharp, Sony, Hitachi, <a
+                        title="Thương hiệu Electrolux" href="#">Electrolux</a>,
+                    Daikin, Aqua, Casper</strong>... Chúng tôi luôn mang đến cho quý khách hàng những sản phẩm
+                chất lượng tốt, giá cả phải chăng và đặc biệt với<strong>dịch vụ giao hàng thu tiền tại
+                    nhà</strong>, chế độ bảo hành cùng dịch vụ chăm sóc khách hàng chu đáo để đem đến cho khách
+                hàng trải nghiệm tốt nhất từ dịch vụ mua sắm trực tuyến!
+            </p>
+            <p>
+                <img src="https://st.meta.vn/img/thumb.ashx/1200x527x95/Data/image/2016/03/16/mua-dien-may-tai-META-cao-cap.jpg"
+                    alt="">
+            </p>
+        </div>
+    </div>
+    <div class="slogan-body">
+        <div class="row-slogan">
+            <div class="sologan-item">
+                <a href="#">
+                    <div class="icon-slogan">
+                        <img src="https://meta.vn/images/icons/dich-vu-uy-tin-icon.svg" alt="">
+                    </div>
+                    <div class="service-name">Dịch vụ uy tín</div>
+                </a>
+            </div>
+            <div class="sologan-item">
+                <a href="#">
+                    <div class="icon-slogan">
+                        <img src="https://meta.vn/images/icons/doi-tra-hang-icon.svg" alt="">
+                    </div>
+                    <div class="service-name">Đổi trả trong 7 ngày</div>
+                </a>
+            </div>
+            <div class="sologan-item">
+                <a href="#">
+                    <div class="icon-slogan">
+                        <img src="https://meta.vn/images/icons/giao-hang-toan-quoc-icon.svg" alt="">
+                    </div>
+                    <div class="service-name">Giao hàng toàn quốc</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+
+@section('js')
+<script src="{{ asset('resources/libraries/jquery/jquery-3.7.1.js') }}"></script>
+<script src="{{ asset('resources/libraries/owlcarousel/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('resources/js/frontend/common/app.js') }}"></script>
+<script src="{{ asset('resources/js/frontend/pages/product-categories/banner2.js') }}"></script>
+<script src="{{ asset('resources/js/frontend/common/owl4.js') }}"></script>
+@endsection

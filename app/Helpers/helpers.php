@@ -44,3 +44,18 @@ function exception($msg = 'Internal Server Error.', $errorCode = 500)
 {
     throw new Error($msg, $errorCode);
 }
+
+function env($key) {
+    return $_ENV[$key];
+}
+
+function asset($file) {
+    $host = env('APP_URL');
+
+    return $host . $file;
+}
+
+function __e__($value)
+{
+    return htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
+}

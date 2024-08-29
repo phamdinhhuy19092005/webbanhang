@@ -1,0 +1,1753 @@
+@extends('frontend.layouts.master')
+
+@section('title')
+Danh mục sản phẩm
+@endsection
+
+@section('styles')
+<link rel="stylesheet" href="{{ asset('resources/libraries/font-awesome/font-awesome-6.5.1.css') }}">
+<link rel="stylesheet" href="{{ asset('resources/css/frontend/pages/home/index.css') }}">
+<link rel="stylesheet" href="{{ asset('resources/css/frontend/pages/products/index.css') }}">
+<link rel="stylesheet" href="{{ asset('resources/libraries/owlcarousel/assets/owl.carousel.min.css') }}">
+<link rel="stylesheet" href="{{ asset('resources/libraries/owlcarousel/assets/owl.theme.default.min.css') }}">
+@endsection
+
+@section('content')
+<div id="menu-container">
+    <div class="breadcrum-cat">
+        <ul class="breadcrum-cat-box">
+            <li class="breadcrum-cat-item">
+                <a href="index.html">
+                    <i class="fa-solid fa-house-chimney"></i>
+                </a>
+                <i class="fa-solid fa-angle-right"></i>
+            </li>
+
+            <li class="breadcrum-cat-item">
+                <a href="#">Đồ dùng nhà bếp</a>
+                <i class="fa-solid fa-angle-right"></i>
+            </li>
+
+            <li class="breadcrum-cat-item">
+                <a href="#">Ấm siêu tốc</a>
+            </li>
+        </ul>
+    </div>
+    <div class="wrap">
+        <div class="row-detail">
+            <div class="view-detail-product">
+                <!-- img -->
+                <div class="view-images-product">
+                    <div class="swiper-container">
+                        <img src="https://st.meta.vn/Data/image/2019/06/17/am-sieu-toc-sanaky-snk-18n-1s-1-8-lit.jpg" alt="">
+                    </div>
+                    <div class="swiper-pagination">
+                        <span class="swiper-pagination-bullet black"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+                        <span class="swiper-pagination-bullet"></span>
+
+                        <div class="slide-pagination">
+                            <div class="slide-pagination-idx">1</div>/ 6
+                        </div>
+                    </div>
+
+                    <hr style=" border: none; background-color: #747474; height: 1px;">
+
+                    <div class="row-viewmore-thumb">
+                        <div class="col-viewmore-item">
+                            <a href="#">
+                                <img src="	https://st.meta.vn/img/thumb.ashx/66x0x95/Data/image/2018/10/09/am-sieu-toc-sanaky-snk-18n-1s-ct.jpg" alt="">
+                                <div class="over-gallery">Xem 6 hình</div>
+                            </a>
+                        </div>
+                        <div class="col-viewmore-item">
+                            <a href="#">
+                                <img src="	https://meta.vn/api/img.ashx?img=b132a072379745458422c180368d5f30.jpg&amp;rid=508163" alt="">
+                                <div class="over-gallery">5 ảnh thực tế</div>
+                            </a>
+                        </div>
+
+                        <div class="col-viewmore-item">
+                            <div class="icon-spec">
+                                <img src="	https://meta.vn/images/Comments-icon.png" alt="">
+                            </div>
+                            <div class="title-spec">
+                                <a href="#">Xem 26 nhận xét</a>
+                            </div>
+                        </div>
+                        <div class="col-viewmore-item">
+                            <div class="icon-spec">
+                                <img src="		https://meta.vn/images/thong-so-icon.png" alt="">
+                            </div>
+                            <div class="title-spec">
+                                <a href="#">Thông số kĩ thuật</a>
+                            </div>
+                        </div>
+                        <div class="col-viewmore-item none">
+                            <a href="#">
+                                <img src="https://s.yimg.com/fz/api/res/1.2/DDqu10xtJp9EwDmAM9QBzw--~C/YXBwaWQ9c3JjaGRkO2ZpPWZpdDtoPTEzMDtxPTgwO3c9MTMw/https://s.yimg.com/zb/imgv1/fdf01399-282a-35f4-9488-09b69236ff0f/t_500x300" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="boxM">
+                    <!-- name -->
+                    <div class="Product-info-right-name">
+                        <div class="detail-prod-name">
+                            <div class="prod-name-main">
+                                <h1 title="title">
+                                    Ấm siêu tốc Sanaky SNK-18NS (SNK-18N1S) - 1.8 lít
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="detail-product-rate">
+                            <div class="rating-box">
+                                <span class="star"><i class="fa-solid fa-star"></i></span>
+                                <span class="star"><i class="fa-solid fa-star"></i></span>
+                                <span class="star"><i class="fa-solid fa-star"></i></span>
+                                <span class="star"><i class="fa-solid fa-star"></i></span>
+                                <span class="star"><i class="fa-solid fa-star"></i></span>
+                            </div>
+                            <div class="amount-rate">
+                                <span><a href="#">(15 đánh giá)</a></span>
+                            </div>
+                        </div>
+                        <div class="brand-top">
+                            <span class="brand-top-left">Thương hiệu:</span>
+                            <div class="brand-top-right">
+                                <span class="brand-link">
+                                    <a href="#" title="title">Sanaky</a>
+                                </span>
+                                <span>|</span>
+                                <span class="brand-link">
+                                    <a href="#" title="title">Ấm siêu tốc Sanaky</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="boxT">
+                        <div class="Product-info-right-top">
+                            <div class="Product-summary">
+                                <div class="detail-info-spec">
+                                    <span class="info-spec-right">
+                                        <span id="p_price" class="p-price">149.000đ</span>
+                                        <span id="p_lprice" class="p-price-old">190.000đ</span>
+                                        <span class="p-price-sale" title="41.000đ"><span>-21% (Đã gồm
+                                                VAT)</span>
+                                        </span>
+                                </span></div>
+
+                                <div class="detail-info-spec status">
+                                    <span class="info-spec-left">Trạng thái:</span>
+                                    <span class="stock stock-status stk_y" itemprop="availability" content="in_stock">Còn hàng</span>
+                                </div>
+
+                                <div class="detail-info-spec">
+                                    <div class="info-spec-left">
+                                        Chọn số lượng
+                                        <span class="info-spec-right2">
+                                            <label class="tru" for="#">-</label>
+                                            <span class="sl"> 1 </span>
+                                            <label class="cong" for="#">+</label>
+                                        </span>
+                                    </div>
+
+                                    <div class="pick-in-cart">
+                                        <span>Cho vào giỏ</span>
+                                        <i class="fa-solid fa-cart-plus"></i>
+                                    </div>
+                                </div>
+
+                                <div class="btn-prod-shopping">
+                                    <div class="btn-buy-wrap">
+
+                                        <button class="btn-shopp-manual" fdprocessedid="q8d2rb">
+                                            <span class="icon-btn">
+                                                <i class="bi bi-cart3"></i>
+                                            </span>
+                                            <span class="txt-shopp">
+                                                <span class="txt-buy-now">Đặt mua</span>
+                                                <span class="txt-ct">Giao hàng tận nơi trên toàn quốc</span>
+                                            </span>
+                                        </button>
+
+                                        <button class="btn-shopp-manual tu-van" style="background-color: #0FA80F;" fdprocessedid="1mm27">
+                                            <span class="icon-btn">
+                                                <i class="fa-solid fa-headphones"></i>
+                                            </span>
+                                            <span class="txt-shopp">
+                                                <span class="txt-buy-now">Tư vấn</span>
+                                                <span class="txt-ct">Chúng tôi sẽ gọi cho bạn</span>
+                                            </span>
+                                        </button>
+                                        <div class="btn-gop">
+                                            <button class="btn-shopp-manual btn-tragop" fdprocessedid="0l92s">
+                                                <span class="txt-shopp">
+                                                    <span class="txt-buy-now">Trả góp 0%</span>
+                                                    <span class="txt-ct">Duyệt nhanh, Không cần thẻ</span>
+                                                </span>
+                                            </button>
+
+                                            <button class="btn-shopp-manual btn-tragop" fdprocessedid="wfvngq">
+                                                <span class="icon-btn">
+                                                    <i class="bi bi-cart3"></i>
+                                                </span>
+                                                <span class="txt-shopp">
+                                                    <span class="txt-buy-now">Trả góp qua thẻ</span>
+                                                    <span class="txt-ct">Visa,Master,JCB</span>
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="test-ab">
+                                    <div class="hotline-wrap">
+                                        <div class="slogan-box-hotline">
+                                            META - Trên 17 năm Uy tín cung cấp Dịch vụ Bán hàng &amp; Thu tiền tại
+                                            nhà
+                                            toàn quốc
+                                        </div>
+                                        <div class="title-hotline-more">
+                                            <span>Xem thêm chi tiết</span>
+                                            <i class="fa-regular fa-circle-check"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="view-detail-right">
+                                <div class="detail-right-box">
+                                    Thông tin hữu ích
+                                </div>
+                                <div class="detail-right-box-wrap">
+                                    <div class="care-detail-box">
+                                        <div class="care-detail-item">
+                                            <a href="#">
+                                                <span>
+                                                    <img src="https://meta.vn/images/tools-icon-s.png" alt="">
+                                                </span>
+                                                <span class="txt-e-c">Trung tâm bảo hành</span>
+                                            </a>
+                                        </div>
+                                        <div class="care-detail-item">
+                                            <a href="#">
+                                                <span>
+                                                    <img src="https://meta.vn/images/giao-hang-toan-quoc-icon.png" alt="">
+                                                </span>
+                                                <span class="txt-e-c">Thông tin vận chuyển</span>
+                                            </a>
+                                        </div>
+                                        <div class="care-detail-item">
+                                            <a href="#">
+                                                <span>
+                                                    <img src="https://meta.vn/images/dich-vu-uy-tin-icon.png" alt="">
+                                                </span>
+                                                <span class="txt-e-c">Hướng dẫn thanh toán</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="catalog-1013">
+        <div class="cat-product-highlight">
+            <div class="title-bar-hl">
+                <div class="title-bar-left">Sản phẩm tương tự</div>
+
+
+                <div class="title-bar-right">
+                    <div class="search-right">
+                        <input type="search" id="search" placeholder="Nhập tên sản phẩm để so sánh">
+                    </div>
+                    <a href="#">Xem tất cả</a>
+                </div>
+            </div>
+            <div class="list-product-highlight">
+                <ul class="product-highlight-wrap owl-carousel owl-theme owl-loaded owl-drag">
+                    
+
+
+                    
+
+                    
+
+                    
+
+                    
+                <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1255px, 0px, 0px); transition: all; width: 3766px;"><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <a href="products.html">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                -40%
+                            </div>
+
+                        </a>
+                        <div class="prod-hl-name"><a href="products.html">
+                            </a><a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item active" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <a href="products.html">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                -40%
+                            </div>
+
+                        </a>
+                        <div class="prod-hl-name"><a href="products.html">
+                            </a><a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item active" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item active" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item active" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item active" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <a href="products.html">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                -40%
+                            </div>
+
+                        </a>
+                        <div class="prod-hl-name"><a href="products.html">
+                            </a><a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div></ul>
+            </div>
+        </div>
+    </div>
+    <div class="box-prod">
+        <section class="row-content-main">
+            <div class="prod-Spec-main">
+                <div class="title-specs">
+                    <div class="h2">Thông số kỹ thuật</div>
+                </div>
+                <div class="body-specs">
+                    <ul class="list-specs">
+                        <li class="item-spec">
+                            <span class="specs-left">Dung tích</span>
+                            <span class="specs-right">1.8 lít</span>
+                        </li>
+                        <li class="item-spec">
+                            <span class="specs-left ">Công suất</span>
+                            <span class="specs-right">1.500W</span>
+                        </li>
+                        <li class="item-spec">
+                            <span class="specs-left ">Tự động ngắt nguồn điện</span>
+                            <span class="specs-right">Có</span>
+                        </li>
+                        <li class="item-spec">
+                            <span class="specs-left ">Nguồn điện áp</span>
+                            <span class="specs-right">220V/50Hz</span>
+                        </li>
+                        <li class="item-spec">
+                            <span class="specs-left ">Xuất xứ thương hiệu</span>
+                            <span class="specs-right">Việt Nam</span>
+                        </li>
+                        <li class="item-spec">
+                            <span class="specs-left ">Sản xuất tại</span>
+                            <span class="specs-right">Trung Quốc</span>
+                        </li>
+                        <li class="item-spec">
+                            <span class="specs-left ">Bảo hành</span>
+                            <span class="specs-right">12 tháng</span>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="title-specs">
+                    <div class="h2">Thông tin sản phẩm</div>
+                </div>
+                <div class="show-content-main">
+                    <div class="readall-wrapper">
+                        <div class="prod-desc-content">
+                            <h2>Ấm siêu tốc Sanaky SNK-18NS (SNK-18N1S) tự ngắt khi nước sôi</h2>
+                            <p>
+                                <a href="#">Ấm siêu tốc</a> được làm từ inox cực tốt
+                                nhưng lại có giá bán rất ưu đãi. Chất liệu inox an toàn cho sức khỏe, khi tiếp
+                                xúc
+                                với
+                                nhiệt độ cao không sinh ra chất độc hại.
+                            </p>
+                            <p class="_ilcss0_">
+                                <img src="https://st.meta.vn/Data/image/2018/10/09/am-sieu-toc-sanaky-snk-18n-1s-ct.jpg" alt="">
+                            </p>
+                            <p class="_ilcss0_">Cấu tạo của ấm siêu tốc</p>
+
+                            <p>
+                                <a title="Ấm siêu tốc Sanaky" href="#" target="">Ấm siêu tốc Sanaky</a> có dung
+                                tích
+                                là
+                                1.8 lít đáp ứng được nhu cầu sử dụng cho gia
+                                đình có từ 4 - 6 người. Tay cầm có tích hợp công tắc bấm rất thuận tiện.
+                            </p>
+                            <p class="_ilcss0_">
+                                <img src="https://st.meta.vn/Data/image/2018/10/09/am-sieu-toc-sanaky-snk-18n-1s-nd.jpg" alt="">
+                            </p>
+                            <p class="_ilcss0_">Lòng ấm bằng inox</p>
+
+                            <p>
+                                Phần đế và tay cầm bằng nhựa chống nóng giúp bạn dễ dàng di chuyển ấm siêu tốc.
+                                Bình
+                                đun
+                                nước siêu tốc có đèn báo hoạt động giúp người dùng nắm bắt được tình trạng của
+                                ấm.
+                            </p>
+                            <p class="_ilcss0_">
+                                <img src="https://st.meta.vn/Data/image/2018/10/09/am-sieu-toc-sanaky-snk-18n-1s-inox.jpg" alt="">
+                            </p>
+                            <p class="_ilcss0_"> Đế tiếp điện xoay 360 độ</p>
+
+                            <p>
+                                Công suất hoạt động lớn 1.500W sẽ đun nước sôi nhanh chóng chỉ sau vài phút.
+                                Người
+                                sử
+                                dụng sẽ có ngay nước nóng để dùng mà không phải chờ đợi lâu.
+                            </p>
+                            <p class="_ilcss0_">
+                                <img src="https://st.meta.vn/Data/image/2018/10/09/am-sieu-toc-sanaky-snk-18n-1s-tay-cam.jpg" alt="">
+                            </p>
+                            <p class="_ilcss0_"> Tay cầm bằng nhựa chắc chắn</p>
+
+                            <p>
+                                <a href="#" target="">Ấm siêu tốc 1.8 lít</a> có trang
+                                bị rơ le tự ngắt khi nước sôi sẽ đảm bảo an toàn tuyệt đối khi sử dụng. Ấm sử
+                                dụng
+                                nguồn
+                                điện 220V/50Hz, hoạt động ổn định và bền bỉ.
+                            </p>
+                            <p class="_ilcss0_">
+                                <img src="https://st.meta.vn/Data/image/2018/10/09/am-sieu-toc-sanaky-snk-18n-1s-nap.jpg" alt="">
+                            </p>
+                            <p class="_ilcss0_">Nút công tắc On/Off trên tay cầm </p>
+
+                            <p><strong>Lưu ý:</strong> Hình ảnh sản phẩm chỉ có tính chất minh họa, chi tiết sản
+                                phẩm, màu sắc có thể thay đổi tùy theo sản phẩm thực tế.</p>
+                        </div>
+                        <button onclick="expandProductDescription()" type="button" class="read-more" fdprocessedid="z18s6h">
+                            <span>Xem toàn bộ nội dung</span>
+                            <i class="fa-solid fa-caret-down"></i> </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="float-right-container">
+            <div class="top-product-connection">
+                <div class="title-bar-hl">
+                    <div class="title-bar-left">
+                        <div class="h2">Có thể bạn quan tâm</div>
+                    </div>
+                </div>
+                <div class="list-product-highlight">
+                    <ul class="product-highlight-wrap-p">
+                        <li class="prod-item">
+                            <div class="prod-left">
+                                <div class="prod-hl-discount-prod">
+                                    <span>-16%</span>
+                                </div>
+                                <div class="prod-hl-thumb">
+                                    <a href="#">
+                                        <img src="https://st.meta.vn/img/thumb.ashx/100x100x95/Data/image/2019/03/15/May-bom-nuoc-Panasonic-200W-GP-200JXK-300.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="prod-right">
+                                <div class="prod-hl-name">
+                                    <a href="#">
+                                        Máy bơm nước Panasonic 200W GP-200JXK
+                                    </a>
+                                </div>
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(16)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="product-price-meta-p">1.380.000 đ</span>
+                                    <span class="product-price-old-p">1.650.000 đ</span>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="prod-item">
+                            <div class="prod-left">
+                                <div class="tragop-ox">Trả góp</div>
+                                <div class="prod-hl-discount-prod">
+                                    <span>-33%</span>
+                                </div>
+                                <div class="prod-hl-thumb">
+                                    <a href="#">
+                                        <img src="https://st.meta.vn/img/thumb.ashx/100x100x95/Data/image/2024/02/28/may-lanh-comfee-cfs-10vaf-300.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="prod-right">
+                                <div class="prod-hl-name">
+                                    <a href="#">
+                                        Máy lạnh Comfee Inverter 1HP CFS-10VAFF-V/CFS10VAFC-V
+                                    </a>
+                                </div>
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(16)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="product-price-meta-p">5.290.000 đ</span>
+                                    <span class="product-price-old-p">7.900.000 đ</span>
+                                </div>
+                            </div>
+                        </li>
+
+
+                        <li class="prod-item">
+                            <div class="prod-left">
+                                <div class="tragop-ox">Trả góp</div>
+                                <div class="prod-hl-discount-prod">
+                                    <span>-18%</span>
+                                </div>
+                                <div class="prod-hl-thumb">
+                                    <a href="#">
+                                        <img src="https://st.meta.vn/img/thumb.ashx/100x100x95/Data/image/2024/01/25/dieu-hoa-casper-tc-12is36-300.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="prod-right">
+                                <div class="prod-hl-name">
+                                    <a href="#">
+                                        Điều hòa Casper Inverter 1 chiều 1.5HP TC-12IS36
+                                    </a>
+                                </div>
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(16)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="product-price-meta-p">6.150.000 đ</span>
+                                    <span class="product-price-old-p">7.500.000 đ</span>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="prod-item">
+                            <div class="prod-left">
+                                <div class="prod-hl-discount-prod">
+                                    <span>-30%</span>
+                                </div>
+                                <div class="prod-hl-thumb">
+                                    <a href="#">
+                                        <img src="https://st.meta.vn/img/thumb.ashx/100x100x95/Data/image/2023/06/29/quat-lam-lanh-khong-khi-galen-g020.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="prod-right">
+                                <div class="prod-hl-name">
+                                    <a href="#">
+                                        Quạt làm lạnh không khí Galen G020
+                                    </a>
+                                </div>
+                                <div class="product-rate">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <span>(16)</span>
+                                </div>
+                                <div class="product-price">
+                                    <span class="product-price-meta-p">1.120.000 đ</span>
+                                    <span class="product-price-old-p">1.590.000 đ</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="catalog-1013">
+        <div class="cat-product-highlight">
+            <div class="title-bar-hl">
+                <div class="title-bar-left">
+                    <img src="https://meta.vn/Data/image/2021/01/13/prod-hot-a.png" alt="">
+                    META gợi ý
+                </div>
+                <div class="title-bar-right-1">
+                    <a href="#">Xem tất cả
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="list-product-highlight">
+                <ul class="product-highlight-wrap owl-carousel owl-theme owl-loaded owl-drag">
+                    
+
+
+                    
+
+                    
+
+                    
+
+                    
+                <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1255px, 0px, 0px); transition: all; width: 3766px;"><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <a href="products.html">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                -40%
+                            </div>
+
+                        </a>
+                        <div class="prod-hl-name"><a href="products.html">
+                            </a><a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item active" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <a href="products.html">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                -40%
+                            </div>
+
+                        </a>
+                        <div class="prod-hl-name"><a href="products.html">
+                            </a><a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item active" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item active" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item active" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item active" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <a href="products.html">
+                            <div class="prod-hl-thumb">
+                                <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                            </div>
+
+                            <div class="prod-hl-discount">
+                                -40%
+                            </div>
+
+                        </a>
+                        <div class="prod-hl-name"><a href="products.html">
+                            </a><a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div><div class="owl-item cloned" style="width: 241.04px; margin-right: 10px;"><li class="product-highlight-item item">
+                        <div class="prod-hl-thumb">
+                            <img src="https://st.meta.vn/img/thumb.ashx/300x300x95/Data/image/2024/01/25/dieu-hoa-casper-tc-09is36-nho.jpg" alt="">
+                        </div>
+
+                        <div class="prod-hl-discount">
+                            -40%
+                        </div>
+
+                        <div class="prod-hl-name">
+                            <a href="#">
+                                <h3>Điều hòa Casper Inverter 1 chiều 1HP TC-09IS36 (New)</h3>
+                            </a>
+                        </div>
+                        <div class="prod-hl-brand">
+                            <a href="#">Casper</a>
+                        </div>
+                        <div class="box">
+                            <div class="product-price list-product-price">
+                                <span class="product-price-meta">5.250.000 đ</span> <br>
+                                <span class="product-price-old "><del>6.900.000</del> đ</span>
+                            </div>
+                            <div class="product-rate">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+
+                                <span>(16)</span>
+                            </div>
+                        </div>
+
+                    </li></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap-tab-comments">
+        <div class="detail-comment-wrap">
+            <div class="title-rated-prod">
+                <h3>Đánh giá &amp; Bình luận</h3>
+            </div>
+            <div class="result-rated-prod">
+                <div class="result-rated-box left">
+                    <div class="star-rated ">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <div class="txt-rated">
+                        <div class="txt-rated-1">Đánh giá trung bình</div>
+                        <div class="txt-rated-2">(Có 15 đánh giá)</div>
+                    </div>
+                    <div class="medium-score-rated">4.9</div>
+                </div>
+
+                <div class="result-rated-box right">
+                    <div class="row-rate-item">
+                        <div class="stt block">5</div>
+                        <div class="star-item block"><i class="fa fa-star"></i></div>
+                        <div class="process-rate block">
+                            <div class="process-inner process-rate-10">
+
+                            </div>
+                        </div>
+                        <div class="quantum-star block">
+                            <a data-filterstar="5" data-title="Xem những lượt đánh giá 5 sao">14
+                                <span class="txt-quantum">đánh giá</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row-rate-item">
+                        <div class="stt block">4</div>
+                        <div class="star-item block"><i class="fa fa-star"></i></div>
+                        <div class="process-rate block">
+                            <div class="process-inner">
+
+                            </div>
+                        </div>
+                        <div class="quantum-star block">
+                            <a data-filterstar="5" data-title="Xem những lượt đánh giá 5 sao">14
+                                <span class="txt-quantum">đánh giá</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row-rate-item">
+                        <div class="stt block">3</div>
+                        <div class="star-item block"><i class="fa fa-star"></i></div>
+                        <div class="process-rate block">
+                            <div class="process-inner">
+
+                            </div>
+                        </div>
+                        <div class="quantum-star block">
+                            <a data-filterstar="5" data-title="Xem những lượt đánh giá 5 sao">14
+                                <span class="txt-quantum">đánh giá</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row-rate-item">
+                        <div class="stt block">2</div>
+                        <div class="star-item block"><i class="fa fa-star"></i></div>
+                        <div class="process-rate block">
+                            <div class="process-inner">
+
+                            </div>
+                        </div>
+                        <div class="quantum-star block">
+                            <a data-filterstar="5" data-title="Xem những lượt đánh giá 5 sao">14
+                                <span class="txt-quantum">đánh giá</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row-rate-item">
+                        <div class="stt block">1</div>
+                        <div class="star-item block"><i class="fa fa-star"></i></div>
+                        <div class="process-rate block">
+                            <div class="process-inner ">
+
+                            </div>
+                        </div>
+                        <div class="quantum-star block">
+                            <a data-filterstar="5" data-title="Xem những lượt đánh giá 5 sao">14
+                                <span class="txt-quantum">đánh giá</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="share-box-comment top-box-comments">
+                <div class="title-rated-prod">
+                    Chia sẻ nhận xét của bạn
+                </div>
+                <form action="" id="rate-form">
+                    <div class="body-share-comment">
+                        <div class="txt-box-share">Đánh giá của bạn về sản phẩm</div>
+                        <div class="list-star-share">
+                            <div class="rating-star">
+                                <label class="full " for="star5" title="1 sao: KHông thích">
+                                    <i class="fa fa-star"></i>
+                                    <span>Không thích</span>
+                                </label>
+                                <label class="full " for="star5" title="2 sao: Tạm được">
+                                    <i class="fa fa-star"></i>
+                                    <span>Tạm được</span>
+                                </label>
+                                <label class="full " for="star5" title="3 sao: Bình thường">
+                                    <i class="fa fa-star"></i>
+                                    <span>Bình thường</span>
+                                </label>
+                                <label class="full " for="star5" title="4 sao: Hài lòng">
+                                    <i class="fa fa-star"></i>
+                                    <span>Hài lòng</span>
+                                </label>
+                                <label class="full active" for="star5" title="5 sao: Tuyệt vời">
+                                    <i class="fa fa-star"></i>
+                                    <span>Tuyệt vời</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="slogan-body">
+        <div class="row-slogan">
+            <div class="sologan-item">
+                <a href="#">
+                    <div class="icon-slogan">
+                        <img src="https://meta.vn/images/icons/dich-vu-uy-tin-icon.svg" alt="">
+                    </div>
+                    <div class="service-name">Dịch vụ uy tín</div>
+                </a>
+            </div>
+            <div class="sologan-item">
+                <a href="#">
+                    <div class="icon-slogan">
+                        <img src="https://meta.vn/images/icons/doi-tra-hang-icon.svg" alt="">
+                    </div>
+                    <div class="service-name">Đổi trả trong 7 ngày</div>
+                </a>
+            </div>
+            <div class="sologan-item">
+                <a href="#">
+                    <div class="icon-slogan">
+                        <img src="https://meta.vn/images/icons/giao-hang-toan-quoc-icon.svg" alt="">
+                    </div>
+                    <div class="service-name">Giao hàng toàn quốc</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+
+@section('js')
+<script src="{{ asset('resources/libraries/jquery/jquery-3.7.1.js') }}"></script>
+<script src="{{ asset('resources/libraries/owlcarousel/owl.carousel.min.js') }}"></script>
+<script src="{{ asset('resources/js/frontend/common/app.js') }}"></script>
+<script src="{{ asset('resources/js/frontend/pages/product-categories/banner2.js') }}"></script>
+<script src="{{ asset('resources/js/frontend/common/owl4.js') }}"></script>
+@endsection

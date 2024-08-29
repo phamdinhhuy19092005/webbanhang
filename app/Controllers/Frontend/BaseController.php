@@ -8,6 +8,6 @@ abstract class BaseController
 
     public function view($path)
     {
-        return view(self::VIEW_PREFIX . '.' . $path);
+        return view(self::VIEW_PREFIX . '.pages.' . $path);
     }
 }
