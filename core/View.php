@@ -53,6 +53,8 @@ class View
             return $fullPath;
         }
 
+        // echo $fullPath;
+
         throw new \Exception('View Not Found with path: ' . $parsedPath);
     }
 
